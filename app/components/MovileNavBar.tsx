@@ -32,7 +32,7 @@ function MovileNavBar() {
   };
   return (
     <motion.div
-      className="bg-black/80 bg-opacity-50 absolute top-0 left-0 w-screen z-50 h-screen sm:hidden backdrop-blur-md "
+      className="bg-black/80 bg-opacity-50 fixed top-0 left-0 w-screen z-50 h-screen sm:hidden backdrop-blur-md "
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
