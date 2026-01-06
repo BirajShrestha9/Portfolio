@@ -5,7 +5,7 @@ import NavBar from "./components/NavBar";
 import Academics from "./components/Academics";
 import MovileNavBar from "./components/MovileNavBar";
 import { useNav } from "./components/NavProvider";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 
 export default function Page() {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
@@ -28,7 +28,7 @@ export default function Page() {
       />
       <AnimatePresence>{isOpen && <MovileNavBar />}</AnimatePresence>
 
-      <header className="fixed top-0  ">
+      <header className="fixed top-0 w-full ">
         <NavBar />
       </header>
       <main>
