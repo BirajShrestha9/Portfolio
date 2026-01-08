@@ -28,7 +28,7 @@ export default function Academics() {
   return (
     <div>
       <div>
-        <div id="Academics" className="bg-black p-4 pt-25">
+        <div id="academics" className="bg-black p-4 pt-25">
           <h2 className="flex flex-col items-center text-3xl font-bold text-center mb-5 px-8">
             Academics & Experience
             <span className="bg-blue-400 w-[100] h-1 inline-block mt-3"></span>

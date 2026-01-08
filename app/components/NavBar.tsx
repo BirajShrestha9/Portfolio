@@ -10,7 +10,7 @@ function NavBar() {
       </a>
       <div className="hidden sm:flex gap-8 md:gap-10 items-center  text-sm md:text-md  ">
         <a href="#home">Home</a>
-        <a href="#Academics">Academic</a>
+        <a href="#academics">Academic</a>
         <a href="#projects">Projects</a>
         <a href="#mySkills">Skills</a>
         <a href="#mySkills">Resume</a>

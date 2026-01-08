@@ -2,7 +2,32 @@ import React from "react";
 import { useNav } from "./NavProvider";
 import { motion } from "framer-motion";
 function MovileNavBar() {
-  const Nav = ["Home", "Academics", "Projects", "Skills", "Resume", "Contact"];
+  const Nav = [
+    {
+      NavId: "Home",
+      NavLink: "home",
+    },
+    {
+      NavId: "Academics",
+      NavLink: "academics",
+    },
+    {
+      NavId: "Projects",
+      NavLink: "projects",
+    },
+    {
+      NavId: "Skills",
+      NavLink: "mySkills",
+    },
+    {
+      NavId: "Resume",
+      NavLink: "mySkills",
+    },
+    {
+      NavId: "Contact",
+      NavLink: "contact",
+    },
+  ];
 
   const { setIsOpen } = useNav();
 
@@ -63,14 +88,15 @@ function MovileNavBar() {
         animate="visible"
         className="flex text-xl text-center gap-10 absolute top-40 left-1/2 transform -translate-x-1/2 flex-col i"
       >
-        {Nav.map((NavItem) => (
+        {Nav.map((NavItem, index) => (
           <motion.a
-            href="./"
-            key={NavItem}
+            href={`#${NavItem.NavLink}`}
+            onClick={(e) => setIsOpen(!e)}
+            key={index}
             variants={childCOntainer}
             className="hover:text-blue-500 cursor-pointer"
           >
-            {NavItem}
+            {NavItem.NavId}
           </motion.a>
         ))}
       </motion.div>
