@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import NavProvider from "./components/NavProvider";
+import Head from "next/head";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,6 +26,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <title>Biraj Shrestha Portfolio</title>
+        <meta property="og:title" content="Biraj Shrestha Portfolio" />
+        <meta
+          property="og:description"
+          content="React, Next.js, Tailwind CSS projects showcase"
+        />
+        <meta property="og:image" content="/preview.png" />
+        <meta
+          property="og:url"
+          content="https://portfolio-jxjdz6z22-birajshrestha9s-projects.vercel.app/"
+        />
+      </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
