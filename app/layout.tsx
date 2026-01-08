@@ -25,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <Head>
         <title>Biraj Shrestha Portfolio</title>
         <meta property="og:title" content="Biraj Shrestha Portfolio" />
@@ -40,7 +40,7 @@ export default function RootLayout({
         />
       </Head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth`}
       >
         <NavProvider>{children}</NavProvider>
       </body>

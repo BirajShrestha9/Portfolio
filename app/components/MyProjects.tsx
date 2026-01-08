@@ -20,7 +20,7 @@ export default function MyProjects() {
   ];
 
   return (
-    <div className="bg-black  pt-25">
+    <div id="projects" className="bg-black  pt-25">
       <div className="flex flex-col items-center text-3xl font-bold text-center mb-5 px-8">
         <h1>My Projects</h1>
         <span className="bg-blue-400 w-[100] h-1 inline-block mt-3"></span>

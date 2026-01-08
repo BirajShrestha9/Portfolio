@@ -3,8 +3,8 @@ import Image from "next/image";
 
 function Contact() {
   return (
-    <div className="bg-black">
-      <section id="contact" className="mt-12 pb-12 md:py-20  text-white mx-4">
+    <div id="contact" className="bg-black">
+      <section className="mt-12 pb-12 md:py-20  text-white mx-4">
         <div className="container mx-auto max-w-7xl">
           {/* Main Card: Mobile ma padding thorai, Desktop ma dherai */}
           <div className="p-6 sm:p-8 md:p-12 backdrop-blur-sm bg-linear-to-b from-gray-900 to-black border border-white/10 shadow-2xl rounded-2xl">

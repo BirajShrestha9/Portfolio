@@ -15,7 +15,7 @@ function MySkills() {
     { name: "Framer motion", imageLink: "icons8-framer-100.png" },
   ];
   return (
-    <div className=" bg-black pt-25 ">
+    <div id="mySkills" className=" bg-black pt-25 ">
       <div className="flex flex-col items-center text-4xl font-bold text-center mb-12 px-8">
         <h1>Tools & Skills</h1>
         <span className="bg-blue-400 w-[100] h-1 inline-block mt-3"></span>
