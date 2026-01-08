@@ -4,7 +4,7 @@ import { useNav } from "./NavProvider";
 function NavBar() {
   const { setIsOpen } = useNav();
   return (
-    <div className=" px-4.5 h-15 md:px-7.5  bg-[rgba(46,205,249,0.45)] flex justify-between gap-8 items-center shadow-[0_0px_10px_2px_rgba(0,0,0,0.3)] backdrop-blur-md">
+    <div className=" px-4.5 h-15 z-10 md:px-7.5  bg-[rgba(46,205,249,0.45)] flex justify-between gap-8 items-center shadow-[0_0px_10px_2px_rgba(0,0,0,0.3)] backdrop-blur-md">
       <h2 className="font-bold text-sm md:text-xl">Biraj Shrestha</h2>
       <div className="hidden sm:flex gap-8 md:gap-10 items-center  text-sm md:text-md  ">
         <h2>Home</h2>

@@ -3,7 +3,10 @@ import { useEffect, useState } from "react";
 import MyHome from "./components/Home";
 import NavBar from "./components/NavBar";
 import Academics from "./components/Academics";
+import MyProjects from "./components/MyProjects";
 import MovileNavBar from "./components/MovileNavBar";
+import MySkills from "./components/MySkills";
+import Contact from "./components/Contact";
 import { useNav } from "./components/NavProvider";
 import { AnimatePresence } from "framer-motion";
 
@@ -28,14 +31,19 @@ export default function Page() {
       />
       <AnimatePresence>{isOpen && <MovileNavBar />}</AnimatePresence>
 
-      <header className="fixed top-0 w-full ">
+      <header className="fixed z-50 top-0 w-full ">
         <NavBar />
       </header>
-      <main>
+      <main className="bg-black">
         <MyHome />
 
         <Academics />
+        <MyProjects />
+        <MySkills />
+        <Contact />
       </main>
     </div>
   );
 }
+
+// PROBLEMS: ACADEMICS ko card has z index more than NAVBAR so it overlaps ...

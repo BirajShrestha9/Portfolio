@@ -1,7 +1,7 @@
 import React from "react";
 
 const academicsClasses =
-  "w-screen flex items-center justify-between   md:w-[44vw] border-2 border-blue-400 rounded-lg bg-black p-6";
+  "w-screen flex items-center justify-between bg-[rgba(245,242,242,0.05)]  md:w-[44vw] border-2 border-blue-400 rounded-lg  p-6";
 
 export default function Academics() {
   const academicInfo = [
@@ -28,12 +28,12 @@ export default function Academics() {
   return (
     <div>
       <div>
-        <div className="bg-black p-4">
-          <h2 className="flex flex-col items-center text-3xl font-bold text-center mb-5 py-10 px-8">
+        <div className="bg-black p-4 pt-25">
+          <h2 className="flex flex-col items-center text-3xl font-bold text-center mb-5 px-8">
             Academics & Experience
             <span className="bg-blue-400 w-[100] h-1 inline-block mt-3"></span>
           </h2>
-          <div className="relative">
+          <div className="relative mt-18">
             {/* //just a vertical line that works after md: screen */}
             <div className="h-full block md:bg-blue-400 w-0.5 absolute top-0 left-1/2 -translate-x-1/2" />
             {/* ............. */}

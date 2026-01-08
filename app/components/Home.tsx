@@ -3,7 +3,7 @@ import Image from "next/image";
 import myAvatar from "../../public/avtar-dz7QYeYu.png";
 function Home() {
   return (
-    <div className="px-8 w-screen min-h-screen bg-linear-to-b from-blue-600  to-black  flex flex-col justify-center  md:flex-row items-center  md:pl-15 transform ">
+    <div className="px-8 w-full min-h-screen bg-linear-to-b from-blue-600  to-black  flex flex-col justify-center  md:flex-row items-center  md:pl-15 transform ">
       <div className="pl-7 order-1 text-center md:text-left md:order-0">
         <h1 className="text-5xl  font-bold md:text-6xl ">
           Hi, I&#39;m <span className="text-blue-500">Biraj</span>
