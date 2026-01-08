@@ -1,10 +1,32 @@
 import React from "react";
 import { useNav } from "./NavProvider";
-
+import { easeInOut, motion } from "framer-motion";
 function NavBar() {
   const { setIsOpen } = useNav();
+  const NavVariants = {
+    initial: {
+      opacity: 1,
+      y: 0,
+    },
+    visible: {
+      animate: { opacity: 0, y: -100 },
+
+      transition: {
+        ease: easeInOut,
+        duration: 0.5,
+        delay: 0,
+      },
+      viewport: { once: false, amount: 0.2 },
+    },
+  };
+
   return (
-    <div className=" px-4.5 h-15 z-10 md:px-7.5  bg-[rgba(46,205,249,0.45)] flex justify-between gap-8 items-center shadow-[0_0px_10px_2px_rgba(0,0,0,0.3)] backdrop-blur-md">
+    <motion.div
+      variants={NavVariants}
+      initial="initial"
+      whileInView="visible"
+      className=" px-4.5 h-15 z-10 md:px-7.5  bg-[rgba(46,205,249,0.45)] flex justify-between gap-8 items-center shadow-[0_0px_10px_2px_rgba(0,0,0,0.3)] backdrop-blur-md"
+    >
       <a href="#home" className="font-bold text-sm md:text-xl">
         Biraj Shrestha
       </a>
@@ -31,9 +53,7 @@ function NavBar() {
           d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
         />
       </svg>
-
-      {/* contact should be resume skills hidden in a bar */}
-    </div>
+    </motion.div>
   );
 }
 

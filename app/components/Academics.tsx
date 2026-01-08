@@ -1,5 +1,5 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 const academicsClasses =
   "w-screen flex items-center justify-between bg-[rgba(245,242,242,0.05)]  md:w-[44vw] border-2 border-blue-400 rounded-lg  p-6";
 
@@ -26,9 +26,19 @@ export default function Academics() {
   ];
 
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0, y: 110 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{
+        type: "tween",
+        ease: "easeInOut",
+        duration: 0.5,
+        delay: 0,
+      }}
+      viewport={{ once: false, amount: 0.2 }}
+    >
       <div>
-        <div id="academics" className="bg-black p-4 pt-25">
+        <div id="academics" className="bg-black p-4 ">
           <h2 className="flex flex-col items-center text-3xl font-bold text-center mb-5 px-8">
             Academics & Experience
             <span className="bg-blue-400 w-[100] h-1 inline-block mt-3"></span>
@@ -145,6 +155,6 @@ export default function Academics() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

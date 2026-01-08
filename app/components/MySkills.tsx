@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 function MySkills() {
   const skillStyle =
     "text-lg flex gap-3 items-center font-medium mb-4 mx-auto w-[65vw] md:w-[40vw] p-2 hover:bg-[rgba(245,242,242,0.08)] rounded-lg transition duration-150 bg-[rgba(245,242,242,0.05)]";
@@ -15,14 +16,26 @@ function MySkills() {
     { name: "Framer motion", imageLink: "icons8-framer-100.png" },
   ];
   return (
-    <div id="mySkills" className=" bg-black pt-25 ">
+    <motion.div
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{
+        type: "tween",
+        ease: "easeInOut",
+        duration: 0.5,
+        delay: 0,
+      }}
+      viewport={{ once: false, amount: 0.2 }}
+      id="mySkills"
+      className=" bg-black pt-25 "
+    >
       <div className="flex flex-col items-center text-4xl font-bold text-center mb-12 px-8">
         <h1>Tools & Skills</h1>
         <span className="bg-blue-400 w-[100] h-1 inline-block mt-3"></span>
       </div>
-      <div className="md:flex items-center bg-black p-5 w-full gap-4 justify-around">
+      <div className="md:flex items-start bg-black p-5 w-full gap-4 justify-around">
         <div className="flex flex-col  ">
-          <h2 className="text-2xl font-bold text-blue-500 text-center mb-8">
+          <h2 className="text-3xl font-bold text-blue-500 text-center mb-8">
             Tools I Use
           </h2>
           <div className={skillStyle}>
@@ -66,7 +79,7 @@ function MySkills() {
           </div>
         </div>
         <div className="pt-25 mx-auto w-[80vw] md:pt-0 md:mx-0 md:w-[40vw] bg-black ">
-          <h2 className="text-2xl font-bold text-blue-500 text-center mb-8">
+          <h2 className="text-3xl font-bold text-blue-500 text-center mb-8">
             My Skills
           </h2>
           {skillsArray.map((skill, index) => {
@@ -100,7 +113,7 @@ function MySkills() {
           <span> View CV</span>
         </button>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

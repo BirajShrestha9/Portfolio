@@ -1,9 +1,21 @@
 import React from "react";
 import Image from "next/image";
-
+import { motion } from "framer-motion";
 function Contact() {
   return (
-    <div id="contact" className="bg-black">
+    <motion.div
+      initial={{ opacity: 0, y: 110 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{
+        type: "tween",
+        ease: "easeInOut",
+        duration: 0.5,
+        delay: 0,
+      }}
+      viewport={{ once: false, amount: 0.3 }}
+      id="contact"
+      className="bg-black"
+    >
       <section className="mt-12 pb-12 md:py-20  text-white mx-4">
         <div className="container mx-auto max-w-7xl">
           {/* Main Card: Mobile ma padding thorai, Desktop ma dherai */}
@@ -177,7 +189,7 @@ function Contact() {
           </div>
         </div>
       </section>
-    </div>
+    </motion.div>
   );
 }
 
