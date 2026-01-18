@@ -42,7 +42,7 @@ function Contact() {
                 <div className="space-y-3 md:space-y-4">
                   {/* Email */}
                   <a
-                    href="mailto:adityalraj003@gmail.com"
+                    href="mailto:biraj9731@gmail.com"
                     className="flex items-center p-3 rounded-lg transition-all hover:bg-white/10 group border border-transparent hover:border-white/5"
                   >
                     <svg
