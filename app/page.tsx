@@ -22,7 +22,7 @@ export default function Page() {
   }, []);
 
   return (
-    <div className="min-h-screen ">
+    <div className="min-h-screen  text-white">
       <div
         className="pointer-events-none fixed inset-0 z-30 transition duration-300"
         style={{
