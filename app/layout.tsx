@@ -33,11 +33,8 @@ export default function RootLayout({
           property="og:description"
           content="React, Next.js, Tailwind CSS projects showcase"
         />
-        <meta property="og:image" content="/preview.png" />
-        <meta
-          property="og:url"
-          content="https://portfolio-jxjdz6z22-birajshrestha9s-projects.vercel.app/"
-        />
+        <meta property="og:image" content="/public/avtar-dz7QYeYu.png" />
+        <meta property="og:url" content="https://www.shresthabiraj.com.np/" />
       </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth`}
