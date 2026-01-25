@@ -110,7 +110,7 @@ function MySkills() {
       <div className="flex justify-center bg-black">
         <button className="bg-blue-600 hover:bg-blue-700 transition duration-300 h-10 px-7 hover:cursor-pointer py-8 mt-12 flex items-center rounded-xl gap-2 text-white">
           <Image src={`/icons8-eye-96.png`} alt="cv" width={28} height={20} />
-          <a href="\CV.pdf" target="_blank" rel="noopener noreferrer">
+          <a href="\BirajCV.pdf" target="_blank" rel="noopener noreferrer">
             {" "}
             View CV
           </a>
